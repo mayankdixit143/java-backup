@@ -1,0 +1,16 @@
+import java.io.*;
+class factorial
+{
+public static void main(String args[]) throws IoException
+{
+int fac=1;
+BufferReader b1=new BufferReader(new InputStreamReader(System.in));
+System.out.println("enter the value");
+int a=Integer.parseInt(b1.readLine());
+for(int i=a;i>0;i--)
+{
+fac=fac*i;
+}
+System.out.println("the factorial of the no"+fac);
+}
+}
